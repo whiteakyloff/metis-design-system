@@ -21,7 +21,7 @@
   },
   "scripts": {
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
+    "build-storybook": "storybook build -o docs && echo ds.metis.works > docs/CNAME",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "eslintConfig": {
