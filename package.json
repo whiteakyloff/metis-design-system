@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@storybook/addons": "^7.6.17",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.2.0",
@@ -14,16 +15,14 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-scripts": "5.0.1",
+    "styled-components": "^6.1.16",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook -o docs"
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "eslintConfig": {
     "extends": [
@@ -48,9 +47,11 @@
     "@chromatic-com/storybook": "^3.2.6",
     "@storybook/addon-essentials": "^8.6.8",
     "@storybook/addon-interactions": "^8.6.8",
+    "@storybook/addon-links": "^8.6.8",
     "@storybook/addon-onboarding": "^8.6.8",
     "@storybook/blocks": "^8.6.8",
     "@storybook/builder-webpack5": "^8.6.8",
+    "@storybook/core-server": "^8.6.8",
     "@storybook/preset-create-react-app": "^8.6.8",
     "@storybook/react": "^8.6.8",
     "@storybook/react-webpack5": "^8.6.8",
